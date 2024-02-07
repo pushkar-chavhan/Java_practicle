@@ -10,7 +10,7 @@ public class Sy_2022BIT001_task {
     }
     public static boolean verifyRegistrationNum(Character arr[]){
         for(int i=0;i<=arr.length;i++){
-            if(i<4||(i>=7&&i<10)){
+            if(i<4||(i>=7&&i<arr.length)){
                 boolean b=Character.isDigit(arr[i]);
                 if(!b){
                     return false;
